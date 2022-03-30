@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Reimbursements Page</title>
+
+    <!-- Here we link the login.css style sheet,  decided to go w/o bootstrap for now -->
+    <link rel="stylesheet" href="login.css" />
+    <script src="login.js"></script>
+  </head>
+  <body>
+    <!-- Here we created a responsive login form -->
+    <form class="box" action="login.html" method="POST">
+      <h1>EMPLOYEE LOGIN</h1>
+      <input type="text" name="" placeholder="Enter Username" id="username" />
+      <input
+        type="password"
+        name=""
+        placeholder="Enter Password"
+        id="password"
+      />
+      <input type="submit" name="" value="Login" onclick="validate()" />
+
+      <!-- Here we give the user the option to register -->
+      <p class="Registrations">
+        Don't have an account?
+        <a href="#tologin" class="to_register"> Register</a>
+      </p>
+    </form>
+  </body>
+</html>
