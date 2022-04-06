@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Manager Portal</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+TC"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-image: url(./Pictures/pineapple.jpg);
+
+        background-size: cover;
+        background-size: 200vh;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background-image: url(./Pictures/pineapple.jpg);
+        background-size: cover;
+        height: 200vh;
+      }
+
+      h2 {
+        width: 100%;
+        text-align: center;
+        font-size: xx-large;
+        font-feature-settings: "blwm";
+        color: white;
+        border: coral;
+        margin: 300px 0px 20px;
+      }
+      p {
+        color: white;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="FinanceManagerhome.html" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="../index.html">Welcome Boss!</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="FinanceManagerhome.html"
+              >Finance Manager Home<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="PendingReimbursements.html"
+              >View Pending Reimbursement Requests</a
+            >
+          </li>
+        </ul>
+        <span class="navbar-text">
+          <a href="EmployeeMenuOptions.html">Logout</a>
+        </span>
+      </div>
+    </nav>
+
+    <h2>Manager Portal</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+          <p>HAVE QUESTIONS? Contact your friendly HR Agent right away!</p>
+        </div>
+        <div class="col-sm-8">
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    View Reimbursement Requests
+                  </button>
+                </h5>
+                <div
+                  id="collapseOne"
+                  class="collapse show"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordion"
+                >
+                  <div>
+                    <ul>
+                      <li>$89 For: Gas-->Tommy (Transportation)</li>
+                      <li>
+                        $456 For: Business Lunch with Clients--->Karen
+                        (Sales-077)
+                      </li>
+                      <li>
+                        $1500 For: Business trip to London-->Francine (Sales
+                        Mgr-777)
+                      </li>
+                      <li>$3054 For: Expenses--->Princess(Accountant-771)</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body"></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    View Employees
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseTwo"
+                class="collapse"
+                aria-labelledby="headingTwo"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  <ol>
+                    <li>Lisa (Image Analyst-001)</li>
+                    <li>Tim (Clerical-908)</li>
+                    <li>Francine (Sales Mgr-777)</li>
+                    <li>Barry(Accountant-771)</li>
+                    <li>Karen(Sales-771)</li>
+                    <li>Tommy(Transportation-002)</li>
+                    <li>Bob(COO-771)</li>
+                    <li>Princess(Accountant-771)</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree">
+                    View Approved & Completed Reimbursement Requests
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseThree"
+                class="collapse"
+                aria-labelledby="headingThree"
+                data-parent="#accordion">
+                <div class="card-body">
+                  <ol>
+                    <li>$456.99--->Lisa (Image Analyst-001)</li>
+                    <li>$75--->Tim (Clerical-908)</li>
+                    <li>$345--->Francine (Sales Mgr-777)</li>
+                    <li>$2,908--->Barry(Accountant-771)</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

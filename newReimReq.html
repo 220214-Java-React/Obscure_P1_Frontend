@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>New Reimbursement Request</title>
+    <link rel="stylesheet" href="newReimReq.css" />
+  </head>
+  <body>
+    <h2>Submit a New Reimbursement Request</h2>
+    <form name="newReim" action="NewReim" method="post">
+      <input
+        id="amount"
+        name="amount"
+        type="number"
+        step="0.01"
+        placeholder="$ Amount"
+      />
+      <input id="comment" name="comment" type="text" placeholder="Comment" />
+      <select name="Types of Reimbursements">
+        <option value="Lodging">Lodging</option>
+        <option value="Travel">Travel</option>
+        <option value="Food">Food</option>
+        <option value="Other">Other</option>
+      </select>
+      <button type="submit" formaction="ThankYOU.html">Submit</button>
+    </form>
+    <a href="EmployeeMenuOptions.html">Cancel and Return to Main Menu</a>
+  </body>
+</html>
